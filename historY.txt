@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исторический проект</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.7;
+            background-color: #f8f5f0;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%23e8e3d9" stroke-width="2"/></svg>');
+        }
+        
+        header {
+            background: #3a4a5c;
+            color: #f0e6d2;
+            text-align: center;
+            padding: 50px 20px;
+            margin-bottom: 35px;
+            border-radius: 3px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-bottom: 5px solid #8e7c5e;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            letter-spacing: 1.5px;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-family: Georgia, serif;
+        }
+        
+        .content {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 3px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            border: 1px solid #e0d9c9;
+        }
+        
+        .person-header {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px dashed #e0d9c9;
+        }
+        
+        .text-section {
+            order: 2;
+        }
+        
+        .image-section {
+            order: 1;
+            text-align: center;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 3px;
+            border: 1px solid #d0c9b9;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+        
+        .image-caption {
+            font-style: italic;
+            color: #666;
+            font-size: 0.95rem;
+            text-align: center;
+            margin-top: 5px;
+        }
+        
+        .full-width-content {
+            margin-top: 40px;
+        }
+        
+        h2 {
+            color: #5a4a32;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0d9c9;
+            font-family: Georgia, serif;
+            font-size: 2.1rem;
+        }
+        
+        h3 {
+            color: #7a6a52;
+            margin: 30px 0 15px;
+            font-family: Georgia, serif;
+            font-size: 1.6rem;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.15rem;
+            text-align: justify;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .gallery-item {
+            text-align: center;
+        }
+        
+        @media (min-width: 768px) {
+            .person-header {
+                flex-direction: row;
+            }
+            
+            .text-section {
+                flex: 3;
+                order: 1;
+            }
+            
+            .image-section {
+                flex: 2;
+                order: 2;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ГРАВЮРЫ ДЮРРЕРА</h1>
+    </header>
+    
+    <main class="content">
+        <section class="person-header">
+            <div class="text-section">
+                <h2>ПИТЕР БРЕЙГЕЛЬ СТАРШИЙ И ЕГО ТЕХНИКА</h2>
+                <p>Великий нидерландский живописец Питер Брейгель Старший знаменит своими произведениями живописи. Он является основателем «крестьянского жанра». Брейгель создал многочисленные аллегорические композиции, связанные с народными пословицами и гуманистической культурой своего времени. Блистательный рисовальщик, он также создал ряд подготовительных рисунков для гравирования. Они составляют целый раздел в истории европейского искусства, известный как «Гравюры по Брейгелю».</p>
+                <p>В творениях Брейгеля присутствует «мужицкий» юмор в сочетании с трагической иронией. Художник часто говорит притчами, иносказательно, предлагая зрителю поучение и назидание. Он многое оставляет без объяснений и призывает к размышлениям об истинах веры и тайнах Царствия Божьего – земного и небесного.</p>
+                <p>Свою творческую деятельность Брейгель начал как гравёр. В начале 1550-х годов художник поселился в Антверпене. Здесь он и начал учиться у преуспевающего живописца и гравёра Питера Кука ван Альста, придворного живописца Карла V. Собственная профессиональная жизнь Брейгеля фактически началась в 1551 году, когда он был избран в Гильдию Святого Луки, антверпенскую ассоциацию художников. Он выполнил множество рисунков для Иеронима Кока, занимавшегося изданием гравюр.</p>
+                <p>Огромное влияние на формирование молодого художника оказал его знаменитый соотечественник Иероним Босх, умерший в 1516 году, задолго до рождения Брейгеля. Вероятно, именно в мастерской Кока Брейгель хорошо изучил наследие своего предшественника, копируя его образы и включая мотивы его работ в собственные рисунки. От Босха пошли нелепые и забавные фигурки, вызывающие веселый смех у зрителей. Гравюры, которые Брейгель создавал для своего работодателя, часто содержали юмористические темы и мотивы, за что его и прозвали "Шутник".</p>
+                <p>Стиль итальянского ренессанса не оказал на Брейгеля сильного влияния, но сельская местность Италии произвела впечатление на молодого художника, который стал позднее известен своими пейзажными работами. После длительных путешествий во Францию, Италию, Швейцарию Брейгель возвратился на родину и продолжил работать на Иеронима Кока. Он был рисовальщиком в его лавке гравюр, носившей название «На четырех ветрах». По рисункам Брейгеля было выпущено несколько серий гравюр. Среди них – «Большие пейзажи», «Семь смертных грехов», «Семь добродетелей».</p>
+                <p>Рисунки Брейгеля, особенно предназначавшиеся для гравировки, обладают четким, прорисованным острым перовым штрихом. В ряде случаев они уже сами имеют вид гравюры.</p>
+            </div>
+            
+            <div class="image-section">
+                <img src="https://avatars.mds.yandex.net/get-entity_search/1976572/484897425/S600xU_2x" alt="Портрет Питера Брейгеля Старшего">
+                <p class="image-caption">Питер Брейгель Старший</p>
+            </div>
+        </section>
+        
+        <!-- Секция галереи с 4 изображениями -->
+        <section class="gallery">
+            <h2>Избранные работы Брейгеля</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://example.com/artwork1.jpg" alt="Название работы 1">
+                    <p class="image-caption">"Падение Икара", 1558</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://example.com/artwork2.jpg" alt="Название работы 2">
+                    <p class="image-caption">"Охотники на снегу", 1565</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://example.com/artwork3.jpg" alt="Название работы 3">
+                    <p class="image-caption">"Вавилонская башня", 1563</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://example.com/artwork4.jpg" alt="Название работы 4">
+                    <p class="image-caption">"Крестьянская свадьба", 1567</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Секция с текстом на всю ширину -->
+        <section class="full-width-content">
+            <h2>Художественное наследие и техника</h2>
+            <p>Брейгель разработал уникальную технику гравирования, сочетающую тонкую проработку деталей с выразительной штриховкой. Его работы отличаются сложной композицией и насыщенностью символами, требующими глубокого анализа. Художник мастерски использовал технику офорта и резцовой гравюры, создавая работы, которые до сих пор поражают своей технической виртуозностью.</p>
+            
+            <h3>Особенности техники Брейгеля</h3>
+            <p>В своих гравюрах Брейгель применял сложную систему перекрестной штриховки, позволяющую создавать тонкие градации тона. Он часто использовал контраст между плотно заштрихованными участками и светлыми зонами, что придавало его работам драматизм и глубину. Особое внимание художник уделял проработке деталей пейзажа и архитектуры, создавая сложные пространственные построения.</p>
+            
+            <h3>Влияние на последующие поколения</h3>
+            <p>Творчество Брейгеля оказало огромное влияние на развитие европейской гравюры. Его техника стала образцом для многих художников Северного Возрождения. Особенно заметно влияние Брейгеля в работах его сыновей - Питера Брейгеля Младшего и Яна Брейгеля Старшего, которые продолжили художественную династию.</p>
+        </section>
+    </main>
+</body>
+</html>
